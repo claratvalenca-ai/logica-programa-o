@@ -1,31 +1,28 @@
 class ContaBancaria {
-    constructor(titular, saldo)
+    constructor(titular, saldo) {
         this.titular = titular;
         this.saldo = saldo
-}
-verSaldo(){
-    console.log (`
-        Olá ${this.titular},
-        sesu saldo atual é R$ ${this.saldo}`)
-}
-Depositar(valor){
-    this.saldo += valor;
-    console.log(`Depósito de R$ ${valor} realizado com sucesso!`);
-    // criar o método sacar e sacar 1000 reais da sua conta, e depois mostrar o saldo atualizado.
-
-sacar(valor) {
-    this.saldo -= valor;
     }
+
+    verSaldo() {
+        console.log(`´
+            Olá ${this.titular},
+            seu saldo atual é 
+            r$ ${this.saldo},`)
+    }
+    depositar(valor) {
+        this.saldo += valor;
+
+    }
+
+    //criar o método sacar e sacar 100 da sua conta
 }
-let ContaDoJoab = new ContaBancaria ("Joab" , 1500)
-ContaDoJoab.verSaldo(_)
-ContaDoJoab.verSaldo ()
-ContaDoJoab.depositar(350)
-ContaDoJoab.verSaldo()
 
-let contaDaClara = new ContaBancaria("Clara" , 15000)
-contaDaClara.verSaldo( )//15K
-contaDaClara.depositar(350); // 15K +350 = 15350
-contaDaClara.sacar(100)
-contaDaClara.verSaldo()//15250
+let contaDoJoab = new ContaBancaria("Joab" , 15000)
+contaDoJoab.verSaldo(_)
+contaDoJoab.verSaldo()
+contaDoJoab.depositar(350)
+contaDoJoab.verSaldo()
 
+let contaDaDafne = new ContaBancaria("Dafne", 1000000)
+    contaDaDafne.verSaldo(_)

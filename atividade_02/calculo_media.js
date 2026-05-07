@@ -20,6 +20,3 @@ let media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) + parseFl
     });
    });
 });
-
-
-
